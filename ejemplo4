@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int G1,M1,S1,G2,M2,S2,G3,M3,S3;
+    cout<<"ingrese valores para el angulo 1\n";
+    cout<<"G1";
+    cin>>G1;
+    cout<<"M1";
+    cin>>M1;
+    cout<<"S1";
+    cin>>S1;
+    cout<<"ingrese valores para el angulo 2\n";
+    cout<<"G2";
+    cin>>G2;
+    cout<<"M2";
+    cin>>M2;
+    cout<<"S2";
+    cin>>S2;
+
+    S3=(S1+S2)%60;
+
+    M3=(M1+M2+(S1+S2)/60)%60;
+
+    G3=G1+G2+(M1+M2)/60;
+
+    cout<<G3<<" "<<M3<<" "<<S3;
+    return 0;
+}
